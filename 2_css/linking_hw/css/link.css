@@ -1,0 +1,11 @@
+a{
+    color : cyan;
+}
+
+a:hover{
+    color:green;
+}
+
+a:active{
+    color:purple;
+}
