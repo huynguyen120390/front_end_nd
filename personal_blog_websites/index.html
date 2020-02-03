@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Huy's Diary</title>
+        <meta content="width=device-width,initial-scale=1,maxium-scale=1" name="viewport"/>
+        <style>
+            .container{
+                display: grid;
+                border: 1px solid orange;
+                width: auto;
+                height: auto;
+                grid-template-columns: 30vw repeat(3,1fr);
+                grid-template-rows: 20vh 5vh 60vh 15vh 1fr;
+                grid-template-areas: 
+                "header        header   header   header"
+                "feature       feature  feature  feature"
+                "navigator     post     post     post"
+                "subscription   post     post     post"
+                "footer        footer   footer   footer"; 
+            }
+            .box{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .headerbox{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .featurebox{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+
+            }
+            #header{
+                grid-area: header;
+            }
+            #feature{
+                grid-area: feature;
+            }
+            #navigator{
+                grid-area: navigator;
+            }
+            #subscription{
+                grid-area: subscription;
+            }
+            #footer{
+                grid-area: footer;
+            }
+            #post{
+                grid-area: post;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="headerbox" id="header">
+                <h1>Huy's Diary</h1>
+            </div>
+            <div class="featurebox" id="feature">
+                <button>About</button>
+                <button>Projects</button>
+            </div>
+
+            <div class="box" id="navigator">
+                Navigator
+            </div>
+            <div class="box" id="subscription">
+                Subscription
+            </div>
+            <div class="box" id="post">
+                Posts
+            </div>
+            <div class="box" id="footer">
+                Footer
+            </div>
+
+        </div>
+    </body>
+</html>
