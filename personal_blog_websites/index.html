@@ -19,74 +19,80 @@
                 "subscription   post     post     post"
                 "footer        footer   footer   footer"; 
             }
-            .box{
-                display: flex;
-                border: 1px solid red;
-                width: auto;
-                height: auto;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-            }
-            .headerbox{
-                display: flex;
-                border: 1px solid red;
-                width: auto;
-                height: auto;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-            }
-            .featurebox{
-                display: flex;
-                border: 1px solid red;
-                width: auto;
-                height: auto;
-                align-items: center;
-                flex-direction: row;
-                justify-content: space-around;
 
-            }
-            #header{
-                grid-area: header;
-            }
-            #feature{
+            .header{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                grid-area : header;
+            }    
+          
+            .feature{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
                 grid-area: feature;
             }
-            #navigator{
+
+            .navigator{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
                 grid-area: navigator;
+                align-items: center;
+                flex-direction: row;
             }
-            #subscription{
+
+            .subscription{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
                 grid-area: subscription;
             }
-            #footer{
+
+            .footer{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
                 grid-area: footer;
             }
-            #post{
+
+            .post{
+                display: flex;
+                border: 1px solid red;
+                width: auto;
+                height: auto;
                 grid-area: post;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="headerbox" id="header">
-                <h1>Huy's Diary</h1>
+            <div class="header">
+                <h1>Huy's Diary</h1>  
             </div>
-            <div class="featurebox" id="feature">
+            <div class="feature">
                 <button>About</button>
                 <button>Projects</button>
             </div>
-
-            <div class="box" id="navigator">
+            <div class="navigator">
                 Navigator
             </div>
-            <div class="box" id="subscription">
+            <div class="subscription">
                 Subscription
             </div>
-            <div class="box" id="post">
+            <div class="post">
                 Posts
             </div>
-            <div class="box" id="footer">
+            <div class="footer">
                 Footer
             </div>
 
