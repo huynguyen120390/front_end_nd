@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Simple Blog</title>
+        <meta content ="width=device-width, initial-scale=1,maximum-scale=1"
+              name = "viewport"/>
+        <!-- <link type ="text/css" rel="stylesheet" href="css/blog.css"> -->
+        <style>
+            .box{
+                display: flex;
+                border : 1px solid red;
+            }
+            #header{
+                grid-area: header;
+
+            }
+            #feature{
+                grid-area: feature;
+            }
+            #sidebar{
+                grid-area:sidebar;
+            }
+            #content{
+                grid-area:content;
+            }
+            #footer{
+                grid-area:footer;
+            }
+            .gallery{
+                width: 100%;
+                display: grid;
+                border: 1px solid orange;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50%;
+                grid-gap : 2px;
+            }
+            .photobox{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border: 1px solid blue;
+                background-color: white;
+                flex-direction: column;
+            }
+            #imag1{
+                background-image: url("images/cat1.jpg");
+                background-repeat:no-repeat;
+                background-size: contain;
+                color: black;
+            }
+            #imag2{
+                background-image: url("images/cat2.jpg");
+                background-repeat:no-repeat;
+                background-size: contain;
+                color:orange;
+            }
+            #imag3{
+                background-image: url("images/cat3.jpg");
+                background-repeat:no-repeat;
+                background-size: contain;
+                color:orangered;
+            }
+            #imag4{
+                background-image: url("images/pig1.jpg");
+                background-repeat:no-repeat;
+                background-size: contain;
+                color:palevioletred;
+            }
+
+            @media screen and (min-width: 500px) and (max-width: 2000px){
+                .container{
+                    
+                    display: grid;
+                    width: auto;
+                    border: 1px solid orange;
+                    background-color: gray;
+                    color: whitesmoke;
+                    justify-content: center;
+                    grid-gap : 1px;
+                    grid-template-rows: 15vh 15vh 80vh 1fr;
+                    grid-template-columns: 60vw 1fr;
+                    grid-template-areas:
+                    "header header"
+                    "feature feature"
+                    "content sidebar"
+                    "footer footer"
+                    ;
+                }
+            }
+
+            @media screen and (max-width:500px){
+                .container{
+                    font-size: 10px;
+                    display: grid;
+                    width: auto;
+                    border: 1px solid orange;
+                    background-color: gray;
+                    color: whitesmoke;
+                    justify-content: center;
+                    grid-gap : 1px;
+                    grid-template-rows: 15vh 15vh 80vh;
+                    grid-template-columns: 70vw ;
+                    grid-template-areas:
+                    "header header"
+                    "feature feature"
+                    "content content"
+                    "footer footer";
+                }
+            }
+            
+            
+            
+        </style>
+    
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="header">Header</div>
+            <div class="box" id="feature">Feature</div>
+            <div class="box" id="content">
+                <div class="blogcontent">
+                    <h1>This is my first blog</h1>
+                    <p>I will write my content here ...</p>
+                </div>
+            </div>
+            <div class="box" id="footer">Footer</div>
+            <div class="box" id="sidebar">
+                <div class="gallery">
+                    <div class="photobox" id="imag1">
+                        <h4>Con meo 1</h4>
+                    </div>
+                    <div class="photobox" id="imag2">
+                        <h4>Con meo 2</h4>
+                    </div>
+                    <div class="photobox" id="imag3">
+                        <h4>Con meo 3</h4>
+                    </div>
+                    <div class="photobox" id="imag4">
+                        <h4>Con meo 4</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+

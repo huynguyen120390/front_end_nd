@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    width: 90vw;
+    height: 90vh;
+    border: 1px solid orange;
+}
+.box{
+
+    display: flex;
+    border : 1px solid red;
+}
+#header{
+    
+}
+#sidebar{
+
+}
+#content{
+
+}
+#footer{
+
+}

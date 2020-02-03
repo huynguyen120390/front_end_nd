@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Excercise 1</title>
+        <meta content ="width=device-width, initial-scale=1,maximum-scale=1">
+        <style>
+            body{
+                background-color: #444;
+                color: whitesmoke;
+                font-size: 27px;
+            }
+            .container{
+                display: grid;
+                width:80vw;
+                margin:auto;
+                grid-template-columns: 30vw 30vw 17vw;
+                grid-template-rows: 45vh 45vh;
+                grid-gap: 1vmax;
+                grid-template-areas:
+                "tren tren tren3 tren4 tren5 tren6"
+                "giua1 giua2 giua3 giuaphai1 giuaphai2 giuaphai3"
+                "duoi1 duoi2 duoi3 duoi4 duoi5 duoi6"
+                ;
+                border:2px solid orange;
+                justify-content: center;
+
+            }
+            .box{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                border:1px solid rgb(128, 0, 43);
+                color: whitesmoke;
+                padding: 1px;
+            }
+            #one{
+                grid-area: tren;
+            }
+            #two{
+                grid-area: giua1 ;
+            }
+            #three{
+                grid-area: giua2;
+            }
+            #four{
+                grid-area: tren3;
+            }
+            #five{
+                grid-area: duoi1;
+            }
+            #six{
+                grid-area:duoi2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="one">Box1</div>
+            <div class="box" id="two">Box2</div>
+            <div class="box" id="three">Box3</div>
+            <div class="box" id="four">Box4</div>
+            <div class="box" id="five">Box5</div>
+            <div class="box" id="six">Box6</div>
+        </div>
+
+    </body>
+</html>
