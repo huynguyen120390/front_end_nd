@@ -5,135 +5,7 @@
         <title>Huy's Diary</title>
         <meta content ="width=device-width, initial-scale=1,maximum-scale=1"
               name = "viewport"/>
-        <style>
-            .container{
-                display: grid;
-                /* border: 1px orange; */
-                width: 100vw;
-                height: 100vh;
-                grid-template-columns: 25vw repeat(3,1fr);
-                grid-template-rows: 20vh 5vh 60vh 15vh 1fr;
-                grid-template-areas: 
-                "header        header   header   header"
-                "feature       feature  feature  feature"
-                "navigator     post     post     post"
-                "subscription   post     post     post"
-                "footer        footer   footer   footer"; 
-            }
-
-            .header{
-                display: flex;
-                /* border: 1px solid red; */
-                width: auto;
-                height: auto;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-                grid-area : header;
-                background-color: #242A2F;
-            }    
-          
-            .feature{
-                display: flex;
-                /* border: 1px solid red; */
-                width: auto;
-                height: auto;
-                grid-area: feature;
-                background-color: #242A2F;
-            }
-
-            .navigator{
-                display: flex;
-                /* border: 1px solid red; */
-                width: auto;
-                height: auto;
-                grid-area: navigator;
-                align-items: center;
-                flex-direction: column;
-                background-color: #242A2F;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
-
-            .subscription{
-                display: flex;
-                /* border: 1px solid red; */
-                width: auto;
-                height: auto;
-                grid-area: subscription;
-                background-color:#454F58;
-                
-            }
-
-            .footer{
-                display: flex;
-                /* border: 1px solid red; */
-                width: auto;
-                height: auto;
-                grid-area: footer;
-            }
-
-            .post{
-                display: grid;
-                /* border: 1px solid red; */
-                width: 100%;
-                height: 100%;
-                grid-area: post;
-                /* align-items: center; */
-                background-color:whitesmoke;
-                grid-template-columns: 30% 30% 30%;
-                grid-template-rows:  50%;
-                grid-auto-flow: row;
-                grid-gap:15px; 
-                /* padding: 15px;  */
-                /* margin:15px; */
-                grid-template-areas:
-                "left-top mid-top right-top"
-                "left-bot mid-bot right-bot";
-                justify-content: center;
-            }
-            .card{
-                width: 300px;
-                height: 350px;
-                /* border: 1px solid orange; */
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
-            .post-img{
-                max-width: 100%;
-                height: auto;
-            }
-            .info-container{
-                padding:15px;
-            }
-            .card #one{
-                grid-area: left-top;
-            }
-            .card #two{
-                grid-area: mid-top;
-            }
-            .card #three{
-                grid-area: right-top;
-            }
-            .card #four{
-                grid-area: left-bot;
-            }
-            .card #five{
-                grid-area: mid-bot;
-            }
-            .card #six{
-                grid-area: right-bot;
-            }
-            .button{
-                background-color: whitesmoke;
-                border: none;
-                display:inline-block;
-                cursor:pointer;
-                margin: 1px;
-                border-radius: 2px;
-
-            }
-
-            
-        </style>
+        <link rel="stylesheet" href="css/overall-layout.css" type="text/css"/>
     </head>
     <body>
         <div class="container">
@@ -155,49 +27,45 @@
                 Subscription
             </div>
             <div class="post">
-                <div class="card" id="one">
-                    <img class="post-img" src="images/seattle.jpg" alt="Apic1"/>
-                    <div class="info-container">
-                        <h4><b>Seattle Sunset</b></h4>
-                        <p>Watch sunset of Seattle</p>
+                <div class="box" id="one">1</div>
+                <div class="box" id="two">2</div>
+                <div class="box" id="three">3</div>
+                <div class="box" id="four">4</div>
+                <div class="box" id="five">5</div>
+                <div class="box" id="six">6</div>
+                <div class="box" id="seven">
+                    <div class="card" id="two">
+                        <img class="post-img" src="images/halong.jpg" alt="Apic1"/>
+                        <div class="info-container">
+                            <h4><b>Halong Bay</b></h4>
+                            <p>Watch sunset of Seattle</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" id="two">
-                    <img class="post-img" src="images/halong.jpg" alt="Apic1"/>
-                    <div class="info-container">
-                        <h4><b>Halong Bay</b></h4>
-                        <p>Watch sunset of Seattle</p>
+                <div class="box" id="eight">
+                    <div class="card" id="three">
+                        <img class="post-img" src="images/seattle.jpg" alt="Apic1"/>
+                        <div class="info-container">
+                            <h4><b>Seattle Sunset</b></h4>
+                            <p>Watch sunset of Seattle</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" id="three">
-                    <img class="post-img" src="images/seattle.jpg" alt="Apic1"/>
-                    <div class="info-container">
-                        <h4><b>Seattle Sunset</b></h4>
-                        <p>Watch sunset of Seattle</p>
+                <div class="box" id="nine">
+                    <div class="card" id="three">
+                        <img class="post-img" src="images/seattle.jpg" alt="Apic1"/>
+                        <div class="info-container">
+                            <h4><b>Seattle Sunset</b></h4>
+                            <p>Watch sunset of Seattle</p>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="card" id="four">
-                    <img class="post-img" src="images/seattle.jpg" alt="Apic1"/>
-                    <div class="info-container">
-                        <h4><b>Seattle Sunset</b></h4>
-                        <p>Watch sunset of Seattle</p>
-                    </div>
-                </div>
-                <div class="card" id="five">
-                    <img class="post-img" src="images/halong.jpg" alt="Apic1"/>
-                    <div class="info-container">
-                        <h4><b>Halong Bay</b></h4>
-                        <p>Watch sunset of Seattle</p>
-                    </div>
-                </div>
-                <div class="card" id="six">
-                    <img class="post-img" src="images/seattle.jpg" alt="Apic1"/>
-                    <div class="info-container">
-                        <h4><b>Seattle Sunset</b></h4>
-                        <p>Watch sunset of Seattle</p>
-                    </div>
-                </div> -->
-            
+                <div class="box" id="ten">10</div>
+                <div class="box" id="eleven">11</div>
+                <div class="box" id="twelve">12</div>
+                <div class="box" id="thirteen">13</div>
+                <div class="box" id="fourteen">14</div>
+                <div class="box" id="fifteen">15</div>
             </div>
             <div class="footer">
                 Footer

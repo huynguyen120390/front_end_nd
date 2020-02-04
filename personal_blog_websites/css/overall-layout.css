@@ -1,0 +1,20 @@
+@import "navigator-area.css";
+@import "feature-area.css";
+@import "header-area.css";
+@import "post-area.css";
+@import "footer-area.css";
+@import "subscription-area.css";
+.container{
+    display: grid;
+    /* border: 1px orange; */
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 25vw repeat(3,1fr);
+    grid-template-rows: 20vh 5vh 60vh 15vh 1fr;
+    grid-template-areas: 
+    "header        header   header   header"
+    "feature       feature  feature  feature"
+    "navigator     post     post     post"
+    "subscription   post     post     post"
+    "footer        footer   footer   footer"; 
+}

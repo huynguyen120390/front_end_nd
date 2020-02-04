@@ -1,0 +1,18 @@
+.button{
+    background-color: whitesmoke;
+    border: none;
+    display:inline-block;
+    cursor:pointer;
+    margin: 1px;
+    border-radius: 2px;
+
+}
+
+.feature{
+    display: flex;
+    /* border: 1px solid red; */
+    width: auto;
+    height: auto;
+    grid-area: feature;
+    background-color: #242A2F;
+}

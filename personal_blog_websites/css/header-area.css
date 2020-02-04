@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    /* border: 1px solid red; */
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-area : header;
+    background-color: #242A2F;
+    color: whitesmoke;
+}    
