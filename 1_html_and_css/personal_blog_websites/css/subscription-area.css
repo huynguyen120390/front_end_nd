@@ -1,0 +1,23 @@
+.subscription{
+    display: flex;
+    border: 1px solid red;
+    width: auto;
+    height: auto;
+    grid-area: subscription;
+    background-color:#454F58;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: stretch;
+
+}
+
+.subs-box{
+    width:40px;
+    height:40px;
+    border: 1px solid red;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}

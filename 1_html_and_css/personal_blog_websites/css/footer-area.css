@@ -1,9 +1,8 @@
-.subscription{
+.footer{
     display: flex;
     /* border: 1px solid red; */
     width: auto;
     height: auto;
-    grid-area: subscription;
-    background-color:#454F58;
-    
+    grid-area: footer;
+    font-size: xx-small;
 }
